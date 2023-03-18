@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.js">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <title>Landing Page</title>
+</head>
+
+<body>
+  <center>
+
+    <header>
+
+      <a href="#">
+        <li>Início</li>
+      </a>
+
+      <a href="https://www.instagram.com/jeitaodabaianaoficial/">
+        <li> Contato</li>
+      </a>
+      </ul>
+    </header>
+
+
+    <center>
+
+      <img src="./src/imagens/img1.jpeg">
+
+
+    </center>
+
+    <main>
+      <p>
+        O tradicional tabuleiro de acarajé "Jeitão da Baiana", fica localizado na praça Rui Barbosa no centro de Nova
+        Iguaçu. E levanta as bandeiras da culinária afro com a cara do Nordeste.
+      </p>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img id="carrossel-1" src="./src/imagens/img2.jpeg" width="320" height="205" />
+          </div>
+          <div class="swiper-slide">
+            <img id="carrossel-1" src="./src/imagens/img2.jpeg" width="320" height="205" />
+          </div>
+          <div class="swiper-slide">
+            <img id="carrossel-1" src="./src/imagens/img3.jpeg" width="320" height="205" />
+          </div>
+          <div class="swiper-slide">
+            <img id="carrossel-1" src="./src/imagens/img4.jpeg" width="320" height="205" />
+          </div>
+          <div class="swiper-slide">
+            <img id="carrossel-1" src="./src/imagens/img5.jpeg" width="320" height="205" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+              
+      </div>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
+
+
+      <main>
+        <center>
+          <center> Quem é Márcia Baiana?</center>
+          Especialista em comida ancestral que desenvolve e apoia projetos voltados para a valorização da cultura
+          afrobrasileira em Nova Iguaçu, na Baixada Fluminense, foi a vencedora da categoria Comida Afetiva na edição
+          2023 do Enchefs RJ pela segunda vez. Negra, mãe solo, nordestina e mulher de Axé.
+
+
+          <div class="container">
+            <img src="./src/imagens/img6.jpeg"  />
+          </div>
+        </center>
+      </main>
+
+      </aside>
+
+
+    </main>
+</body>
+</center>
+
+</html>
